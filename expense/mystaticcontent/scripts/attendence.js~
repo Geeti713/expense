@@ -1,0 +1,51 @@
+jQuery(document).ready(function(){
+					 
+					jQuery(window).load(function(){
+								var cookies= document.cookie.split("; ");
+								if(!cookies || cookies.length<=0){
+									window.location.href="../index.html";
+									return ;
+								}
+								var found=false;
+								for(var i=0; i < cookies.length; i++) {	
+									var cookiesarray= cookies[i].split("=");
+									var name=cookiesarray[0];
+									var value= "";
+									if(cookiesarray.length>1)
+									{
+										 value= cookiesarray[1];   
+									} 				
+									if(name=="isloggedin" && value == "true"){
+          									found=true;	
+									}
+								}
+								if(!found){
+									window.location.href="../index.html";
+								}			
+    					});
+
+					jQuery('#logoutinput').click(function(){
+    									document.cookie="isloggedin=null; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT;";
+      										window.location.href = "../index.html";
+   			 						
+					});
+					jQuery('#attendencebutton').click(function(){
+    									var attendencedetails = function(arr){
+										var str = "<table><tr><td><b>NAME</b></td><td><b>Email</b></td><td><b>intm</b></td><td><b>dt</b></td><td><b>outtm</b></td></tr>";
+										arr.forEach(function(elem){
+														str=str+ "<tr><td>"+elem.name+"</td><td>"+elem.email+"</td><td>"+elem.intm+"</td><td>"+elem.dt+"</td><td>"+elem.outtm+"</td></tr>";
+													});
+										str= str+"</table>";
+										return str;
+									}
+	
+									jQuery.get("/getattendence", function(res){
+									var a = res.arr;
+									var attendence = attendencedetails(a);	
+									jQuery("#attendencerecords").html(attendence);		
+									});
+					});
+		
+					
+
+});

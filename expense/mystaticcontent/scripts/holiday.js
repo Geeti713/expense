@@ -1,0 +1,116 @@
+jQuery(document).ready(function(){
+					 
+					jQuery(window).load(function(){
+							var cookies= document.cookie.split("; ");
+							if(!cookies || cookies.length<=0){
+								window.location.href="../index.html";
+								return ;
+							}
+							var found=false;
+							for(var i=0; i < cookies.length; i++) {	
+								var cookiesarray= cookies[i].split("=");
+								var name=cookiesarray[0];
+								var value= "";
+								if(cookiesarray.length>1)
+								{
+									value= cookiesarray[1];   
+								} 				
+								if(name=="isloggedin" && value == "true")
+								{
+          								found=true;	
+								}
+							}
+							if(!found){
+								window.location.href="../index.html";
+								
+							}			
+    					});
+					var cookies= document.cookie.split("; ");
+					if(!cookies || cookies.length<=0){
+					}
+					for(var i=0; i < cookies.length; i++) {	
+						var cookiesarray= cookies[i].split("=");
+						var name=cookiesarray[0];
+						if(cookiesarray.length>1)
+						{
+							value= cookiesarray[1];   
+						} 				
+						if(name=="empid"){
+          						var id = cookiesarray[1];
+							var loggedid = function(arr){
+									 var str= "<lable>"+arr+"</lable>";
+									console.log(str);
+									return str;
+							}
+							var login = loggedid(id);
+							jQuery("#loggedinid").html(login);	
+						}
+					}
+					jQuery('#logoutinput').click(function(){
+
+    						document.cookie="isloggedin=null; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT;";
+      						window.location.href = "../index.html";				
+					});
+					jQuery('#addholiday').click(function(){
+
+    						window.location.href = "/htmls/addholiday.html";				
+					})
+					var generatelist = function(arr){
+
+						var str = "<table><tr><td><b>Name</b></td><td><b>Date</b></td><td></td><td></td></tr>";
+						arr.forEach(function(elem){
+							str=str+ "<tr><td>"+elem.name+"</td><td>"+elem.date+"</td><td>"+"<input type="+"'button'"+"value="+"'Edit'"+"id="+elem._id+" class="+"'editbutton'>"+"</td><td>"+"<input type="+"'button'"+ "value="+"'Delete'"+"id="+elem._id+" class="+"'deletebutton'>"+"</td></tr>";
+							});
+						str= str+"</table>";
+						return str;
+					}
+					jQuery.get("/getholiday", function(res){
+
+						var a = res.arr;
+						var holiday = generatelist(a);	
+						jQuery("#holidayrecords").html(holiday);		
+					
+						jQuery(".deletebutton").click(function(){
+
+							var buttonid=$(this).attr("id");  
+  							
+  							var checkstr =  confirm('are you sure you want to delete this?');
+							if(checkstr == true){
+										jQuery.get("/deleteholiday?id="+buttonid, function(res){
+											if(res.ok==1){
+											location.reload();
+											}
+											else if(res.ok==0){
+												alert("not delete");				
+											}
+  											console.log("request recieved");
+											
+										});
+										return false;
+									}
+							
+							
+							
+						});
+
+						jQuery(".editbutton").click(function(){
+
+							var buttonid=$(this).attr("id");
+							jQuery.get("/editholiday?id="+buttonid, function(res){
+								var res=res.arr[0];
+
+
+								console.log(res);
+								
+								var name= res.name;
+								var date= res.date;
+								console.log(name);
+								window.location.href="/htmls/editholiday.html?id="+ buttonid +"&name="+ name+ "&date="+ date;
+									
+									
+								console.log("request recieved");
+											
+							});
+						});
+					});
+});

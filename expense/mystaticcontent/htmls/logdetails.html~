@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<h4>LOG DETAILS OF EMPLOYE</h4>
+		<br><br>
+		<br><br>
+		<input id= "checkin" type= "button" value= "Logtime of checkin">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<input id= "checkout" type= "button" value= "Logtime of checkout">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<a href="login.html">Home</a>
+		<br><br><br>
+		<div id= "logdetails">
+
+		</div>
+				
+		<script src="/scripts/jquery.min.js"></script>
+		<script src="/scripts/logdetails.js"></script>
+
+	</body>
+</html>

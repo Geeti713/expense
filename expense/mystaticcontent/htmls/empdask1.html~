@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	</head>
+	<body>
+
+		<h4>Employe Dask</h4>
+		<br>
+		Employe Code:&nbsp&nbsp&nbsp&nbsp<input id="empidinput" type= "text">
+		<br><br>
+		<input id="checkoutbutton" type= "button" value= "Checkout"/>
+		<br><br>		
+		<br><br>
+	
+		<br>
+
+		<script src="/scripts/jquery.min.js"></script>
+		<script src="/scripts/empdask1.js"></script>
+
+	</body>
+</html>

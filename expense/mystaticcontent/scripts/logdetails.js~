@@ -1,0 +1,57 @@
+jQuery(document).ready(function(){
+
+
+		jQuery("#checkin").click(function(){
+
+			var generatelist = function(arr){
+
+					var str = "<table><tr><td>Employe code</td><td>Login time</td></tr>";
+
+					arr.forEach(function(elem){
+						str=str+ "<tr><td>"+elem.id+"</td><td>"+elem.checkintym+"</td></tr>";
+					});
+
+					str= str+"</table>";
+
+					return str;
+	
+				}
+	
+			jQuery.get("/getlogindetails", function(res){
+			var a = res.arr;
+			var emplogin = generatelist(a);	
+			jQuery("#logdetails").html(emplogin);
+
+
+		});
+
+	});
+
+	jQuery("#checkout").click(function(){
+
+			var generatelist = function(arr){
+
+				var str = "<table><tr><td>Employe code</td><td>Logout time</td></tr>";
+
+					arr.forEach(function(elem){
+						str=str+ "<tr><td>"+elem.id+"</td><td>"+elem.checkouttym+"</td></tr>";
+					});
+
+				str= str+"</table>";
+
+				return str;
+	
+			}
+	
+			jQuery.get("/getlogoutdetails", function(res){
+			var a = res.arr;
+			var emplogout = generatelist(a);	
+			jQuery("#logdetails").html(emplogout);
+
+
+		});
+	
+	});
+
+
+});

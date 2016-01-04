@@ -1,0 +1,48 @@
+jQuery(document).ready(function(){
+
+		var generateTable = function(arr){
+
+				var str = "<table><tr><td>Book</td></tr>";
+
+				arr.forEach(function(elem){
+					str=str+ "<tr><td>"+elem.book+"</td></tr>";
+				});
+
+				str= str+"</table>";
+
+				return str;
+	
+		}
+
+		jQuery("#submitbutton").click(function(){
+
+			// first get current date
+			// get last month and year
+			// get first date and last date of lastmonth and year
+			// get member id
+			// post jquery request to server
+			// on response show table
+			
+			var cdt = new Date();
+			cdt.setDate(0);
+			var lastMonthLastDateStr = new Date(cdt.getTime());
+			cdt.setDate(1);			
+			var lastMonthFirstDateStr = new Date(cdt.getTime());
+
+			var memberId = jQuery("#userid").val();
+
+			jQuery.post("/getlistofissuedbooksinlastmonth", {d1:lastMonthFirstDateStr, d2:lastMonthLastDateStr, memberId:memberId},
+				function(res){
+					
+					var myArr = res.arr;
+					var myTableString = generateTable(myArr);
+					jQuery("#booktablediv").html(myTableString);
+
+			});
+			
+
+		});
+
+
+
+});

@@ -1,0 +1,42 @@
+jQuery(document).ready(function(){
+
+	
+	jQuery("#submitbutton").click(function(){
+
+		//match passward and conpswd
+
+		var name = jQuery("#nameinput").val();
+		var dept = jQuery("#depinput").val();
+		var addr = jQuery("#addrinput").val();
+		var mobile = jQuery("#mobileinput").val();		
+		var empid = jQuery("#empinput").val();
+		var passward = jQuery("#pswdinput").val();
+		var conpswd = jQuery("#cpswdinput").val();
+			
+		if(passward==conpswd)
+		{
+			alert("passward match");
+		}
+		else{
+
+			alert("passward does not match");
+			return;
+			}
+
+
+		jQuery.post("/empjoin",{name: name, mobile: mobile, address:addr, dept:dept, empid:empid, pswd:passward, 							cpswd:conpswd}, function(res){
+			
+							console.log("request recieve");
+							
+							if(res.result==1){
+						location.href="/htmls/login.html";							
+								}
+						else{
+							alert("user not resigter");		
+						}
+				});
+	
+	});
+
+
+});

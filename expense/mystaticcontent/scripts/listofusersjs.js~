@@ -1,0 +1,26 @@
+jQuery(document).ready(function(){
+
+
+	var generateTable = function(arr){
+
+		var str = "<table><tr><td>Name</td><td>Age</td><td>Phone Number</td></tr>";
+
+		arr.forEach(function(elem){
+			str=str+ "<tr><td>"+elem.name1+"</td><td>"+elem.age1+"</td><td>"+elem.phone1+"</td></tr>";
+		});
+
+		str= str+"</table>";
+
+		return str;
+	
+	}
+	
+	jQuery.get("/getlistofregisteredusers", function(res){
+		var a = res.arr;
+		var mytablestring = generateTable(a);
+		
+		jQuery("#mydbtable").html(mytablestring);
+	});
+
+
+});

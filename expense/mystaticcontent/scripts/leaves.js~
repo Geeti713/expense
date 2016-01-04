@@ -1,0 +1,17 @@
+jQuery(document).ready(function(){
+					var generatelist = function(arr){
+										var str = "<table><tr><td><b>Category</b></td><td><b>Type</b></td><td><b>d</b></td><td><b>amt</b></td><td><b>dt</b></td><td><b>id</b></td><td><b>Email</b></td><td><b>Name</b></td><td><b>Status</b></td><td><b>Reference no</b></td></tr>";
+										arr.forEach(function(elem){
+														str=str+ "<tr><td>"+elem.category+"</td><td>"+elem.type+"</td><td>"+elem.d+"</td><td>"+elem.amt+"</td><td>"+elem.dt+"</td><td>"+elem.id+"</td><td>"+elem.email+"</td><td>"+elem.name+"</td><td>"+elem.status+"</td><td>"+elem.referenceno+"</td><td>"+"<input type="+" text>"+"</td><td>"+"<input type="+"'button'"+"value="+ "Paid>"+"</td></tr>";
+													});
+										str= str+"</table>";
+										return str;
+									}
+	
+					jQuery.get("/getexpense", function(res){
+					var a = res.arr;
+					var expense = generatelist(a);	
+					jQuery("#expenserecords").html(expense);		
+				});
+
+});

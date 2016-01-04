@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+<body>
+
+<div id="mydbtable"></div>
+
+
+
+<a href="/index.html">Go To User Registration</a>
+<script src="/scripts/jquery.min.js"></script>
+<script src="/scripts/mydbendtoenduijs.js"></script>
+
+</body>
+</html>

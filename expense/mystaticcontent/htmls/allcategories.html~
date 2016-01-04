@@ -1,0 +1,27 @@
+<!DOCTYPE.html>
+<html>
+
+			<head>
+				<meta name="viewport" content="width=device-width">
+				<link href="../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+			</head>
+			<body style="background-color:ff2fff;">
+			<div class= "container-fluid">
+				<div class="row-fluid">
+					<div class="col-lg-2">Casualshoes</div>
+					<div class="col-lg-2">Formalshoes</div>
+					<div class="col-lg-2">flipflop</div>
+					<div class="col-lg-2">Sandals</div>
+					<div class="col-lg-2">Sportshoes</div>
+				</div>
+			
+			</div>
+
+
+				<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+				<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+								
+			</body>
+
+
+</html>
