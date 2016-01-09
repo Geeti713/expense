@@ -1,0 +1,27 @@
+jQuery(document).ready(function(){
+
+	
+	jQuery("#checkinbutton").click(function(){
+
+		//get id and login tym		
+		var empid = jQuery("#empidinput").val();
+		var logintym= new Date();
+		
+
+
+		jQuery.post("/getcheckin",{id:empid,checkintym:logintym},function(res){	
+							
+							if(res.ok==1){
+									alert("welcome");						
+								}
+						else{
+							alert("user not resigter");		
+						};
+				});
+	
+	});
+
+	
+
+});
+

@@ -1,0 +1,35 @@
+jQuery(document).ready(function(){
+
+		jQuery("#submitbutton").click(function(){
+		
+			var id = jQuery("#userid").val();
+			
+
+			var generatelist = function(arr){
+
+				var str = "<table><tr><td>Book</td></tr>";
+
+				arr.forEach(function(elem){
+					str=str+ "<tr><td>"+elem.book+"</td></tr>";
+				});
+
+				str= str+"</table>";
+
+				return str;
+	
+			}
+
+			jQuery.get("/getissuedbooklist?geeti="+id, function(res){
+		
+				console.log("request recieved");
+				var a = res.arr;
+				var issuebook = generatelist(a);
+		
+				jQuery("#book").html(issuebook);
+		});
+
+	});
+
+
+
+});

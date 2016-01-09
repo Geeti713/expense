@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	</head>
+	<body>
+
+		<h4>Library Resigtrasion</h4>
+		Name:&nbsp&nbsp&nbsp&nbsp&nbsp<input id="nameinput" type= "text"/>
+		<br><br>
+		Deparment:&nbsp&nbsp&nbsp&nbsp&nbsp<input id="classinput" type= "text"/>
+		<br><br>
+		Addr:&nbsp&nbsp&nbsp&nbsp&nbsp<input id="addrinput" type= "text"/>
+		<br><br>
+		Mobile no:&nbsp&nbsp&nbsp&nbsp&nbsp<input id="mobileinput" type= "text"/>
+		<br><br>
+		Member Id:&nbsp&nbsp&nbsp&nbsp&nbsp<input id= "userid" type= "text"/>
+		<br><br>
+		Password:&nbsp&nbsp&nbsp&nbsp<input id="pswdinput" type= "password"/>
+		<br><br>
+		Confirm Password:&nbsp&nbsp&nbsp&nbsp<input id="cpswdinput" type= "password"/>
+		<br><br>
+		<input id="submitbutton" type= "button" value= "Submit"/>
+		<br><br>
+		<p><a href="../index.html">Home</a>&nbsp&nbsp&nbsp&nbsp&nbsp<a href="login.html"> Login</a></p>
+		
+		<br/>
+
+		<script src="/scripts/jquery.min.js"></script>
+		<script src="/scripts/resigter.js"></script>
+
+	</body>
+</html>

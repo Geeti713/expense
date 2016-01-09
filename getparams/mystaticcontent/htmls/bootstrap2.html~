@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name= "viewport" content= "width-device-device">
+		<link href= "../css/bootstrap2.css" rel= "stylesheet" type= "text/css">
+		<link href= "../bower_components/bootstrap/dist/css/bootstrap.css" rel= "stylesheet">
+	</head>
+	<body>
+		<!-- Stack the columns on mobile by making one full-width and the other half-width -->
+<div class="row">
+  <div class="col-xs-12 col-md-8">Home</div>
+  <div class="col-xs-6 col-md-4">Blog</div>
+</div>
+
+<!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+<div class="row">
+  <div class="col-xs-6 col-md-4">home</div>
+  <div class="col-xs-6 col-md-4">blog</div>
+  <div class="col-xs-6 col-md-4">contact</div>
+</div>
+
+<!-- Columns are always 50% wide, on mobile and desktop -->
+<div class="row">
+  <div class="col-xs-6">home</div>
+  <div class="col-xs-6">concact</div>
+</div>
+
+<div class="row">
+  <div class="col-xs-9">.col-xs-9</div>
+  <div class="col-xs-4">.col-xs-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
+  <div class="col-xs-6">.col-xs-6<br>Subsequent columns continue along the new line.</div>
+</div>
+		<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	</body>
+</html>

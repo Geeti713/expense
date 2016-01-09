@@ -1,0 +1,222 @@
+<!DOCTYPE hmtl>
+<html>
+	<head>
+		<meta name= "viewport" content="width=device-width">
+		<link href="../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+		<link rel= "stylesheet" type= "text/css" href= "../css/maincss.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-default" style="min-height: 60px margin-bottom: 0;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="#"><span><img style= "width:40px" src= "../img/kavworkslogo.png">&nbsp;&nbsp;KAVworks</span></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">About Us</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our Services <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Software As Services</a></li>
+            <li><a href="#">Mobile Apps</a></li>
+	     <li><a href="#">Tablet Apps</a></li>
+            <li><a href="#">Professional Education</a></li>
+          </ul>
+        </li>
+	<li><a href="#">Contact Us</a></li>
+        <li><a href="#">Pay Us</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container-fluid">
+	<div class="row bannerrow">
+		<div class="col-xs-12 mainheading">
+			<h1>Welcome to KAVworks</h1>
+			<p>The ultimate destination for all your software needs!</p>
+			<hr>
+		</div>
+	</div>
+  
+	</div>
+	<div class="row centeraligntext detailssection">
+		<div class="col col-xs-12">
+			<div class="row headingrow">
+				<div class="col col-xs-12">
+					<h3>
+						Our<b>Services</b>offer more possibilities to meet your business needs.
+					</h3>
+					<hr>
+				</div>
+			</div>
+			<div class="row">
+			<a class="col col-lg-3 col-xs-12" href="#software">
+				<div class="row">
+					<div class="col col-xs-12">
+						<div class="circularbgimage circularbgmonitorimage"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-xs-12">
+						<h4>Websites & Softwares</h4>
+					</div>
+				</div>
+			</a>
+			<a class="col col-lg-3 col-xs-12" href="#mobileapps">
+				<div class="row">
+					<div class="col col-xs-12">
+						<div class="circularbgimage circularbgmobileimage"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-xs-12">
+						<h4>Mobile Apps</h4>
+					</div>
+				</div>
+			</a>
+			<a class="col col-lg-3 col-xs-12" href="#tabdetails">
+				<div class="row">
+					<div class="col col-xs-12">
+						<div class="circularbgimage circularbgtabimage"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-xs-12">
+						<h4>Tablet Apps</h4>
+					</div>
+				</div>
+			</a>
+			<a class="col col-lg-3 col-xs-12" href="#edudetails">
+				<div class="row">
+					<div class="col col-xs-12">
+						<div class="circularbgimage circularbgeducationimage"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-xs-12">
+						<h4>Professional Education</h4>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+</div>
+ 	
+	
+	<div id= "Softwares" style= "background-color: #ececec; color: #787878;padding: 10px"class="row">
+  		<div class="col-xs-12 col-md-6 col-lg-6"><img class="img-responsive" src="../img/softwares.png"></div>
+  		<div style= "text-align-xs-center text-align-lg-justify" class="col-xs-12 col-md-6 col-lg-6">
+			<h1>Softwares</h1>
+			<p> 
+				We build softwares to meet your smallest requirement with the latest technologies like HTML5, AngularJS, 					Node.Js, MongoDB, etc. with the best practices. 
+			</p>
+                        <p> 
+				We want YOU to know that your problems are of great concern to us. Hence, we provide you with an excellent 					team of people to help you solve your problems completely.
+			 </p>
+			<p>
+                  		We offer you the best<b>free maintenance services</b>a complete year round and henceforth with a bare minimum 					charge.
+                   	</p>
+                   	<p>
+                     			Our software will help you go easy on your tasks and will eventually help you meet your goals smoothly 					and effectively.      
+ 			</p>
+		</div>
+	</div>
+	<div id= "Mobile" style= "background-color: #ffffff; color: #787878;padding: 10px"class="row">
+  		<div style= "text-align-xs-center text-align-lg-justify" class="col-xs-12 col-md-6 col-lg-6">
+			<h1> Mobile Apps </h1>
+			<p> 
+				 Its time to be quick, responsive, young and enthusiast. Our personalized<b>mobile apps </b>will help you be 					so. 
+			</p>
+                        <p> 
+				 Its time to callout for the smart mobile applications to fetch attention and gain business. Lets get
+				<b>smarter</b>with us. 
+			 </p>
+			<p>
+                  		Similar to the desktop based softwares, our mobile apps are aimed to meet your smallest requirement     with  					latest technologies and the best practices by avoiding hacks and workarounds.
+                   	</p>
+                   	<p>
+                     		 If you own any business or want to get into one, we have a personalized<b>Mobile App</b>for YOU
+			</p>
+		</div>
+		<div class="col-xs-12 col-md-6 col-lg-6"><img class="img-responsive" src="../img/mobiledetails.png"></div>
+	</div>		
+	<div style= "background-color: #ececec; color: #787878; padding: 10px"class="row">
+  		<div class="col-xs-12 col-md-6 col-lg-6"><img class="img-responsive" src="../img/tabdetails.png"></div>
+  		<div style= "text-align-xs-center text-align-lg-justify" class="col-xs-12 col-md-6 col-lg-6">
+			<h1> Tablet Apps</h1>
+			<p> 
+				Gain special attention from your customers about your high tech services through the presentable and easily 					maintainable Tablet Apps 
+			</p>
+                        <p> 
+				We want YOU to know that your problems are of great concern to us. Hence, we provide you with an excellent 						team of people to help you solve your problems completely.
+			 </p>
+			<p>
+                  		 We offer you the best<b>free maintenance services</b>a complete year round and henceforth with a bare minimum 					charge.
+                   	</p>
+                   	<p>
+                     		Our software will help you go easy on your tasks and will eventually help you meet your goals smoothly 					and effectively.      
+ 			</p>
+		</div>
+	</div>	
+	<div style= "background-color: #fffff; color: #787878;padding: 10px"class="row">
+  		<div style= "text-align-xs-center text-align-lg-justify" class="col-xs-12 col-md-6 col-lg-6">
+			<h1> Professional Education</h1>
+			<p> 
+				We build softwares to meet your smallest requirement with the latest technologies like HTML5, AngularJS, 					Node.Js, MongoDB, etc. with the best practices. 
+			</p>
+                        <p> 
+			 	As the tablet provides a comfortable user interaction, We make it possible for YOU to provide your customers 					the ease they need, be it <b>customer feedback interaction</b> or <b>ordering food at your restaurant.</b>
+			 </p>
+			<p>
+                  	You can also view the daily analytics and reports of your business, anytime and anywhere, on your tablet using our app
+                   	</p>
+                   	<p>
+                     		If you have own any business or want to get into one, we have a personalized<b>Tablet App</b>for YOU. 
+ 			</p>
+		</div>
+		<div class="col-xs-12 col-md-6 col-lg-6"><img class="img-responsive" src="../img/wordle.png"></div>
+	</div>
+	<div style= "background-color: #ececec; color: #787878;padding-top: 30px; padding-bottom: 30px"class="row">
+		<div style= "text-align: center;" class="col-lg-12 col-xs-12">
+		    <h3>
+			Choosing<b> Us </b> is your best decision. Here's why:
+		    </h3>
+			We offer you with an end to end service for your app development, website development,
+			<br>
+				your simplest to complicated software,
+			<br>
+				or even educating the youth through vocational trainings
+			<br>
+				on the much needed market requirements.
+			<br>
+				<b>We are ready to serve you anytime.</b>
+		</div>
+	</div>
+	<div class="row footer copywritediv">
+		<div class="col-xs-12">
+			<p style="text-align: center;">
+				<a class="whitelink">Terms Of Conditions</a>|  
+				<a class="whitelink">Privacy Policy</a>
+			</p>
+		</div>
+		<div class="col-xs-12">
+			<p style="text-align: center;"> © 2015, KAVworks Technologies Pvt. Ltd. </p>
+		</div>
+	</div>
+</div>	
+		<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+								
+	</body>
+</html>

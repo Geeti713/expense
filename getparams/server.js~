@@ -1,0 +1,44 @@
+var express = require('express');
+var app= express();
+
+var mongoclient = require('mongodb').MongoClient;
+
+var url = "mongodb://localhost:27017/paramsdb";
+
+var DB = null;
+mongoclient.connect(url, function(err,db){
+	
+	DB=db;
+
+
+});
+
+
+app.use(express.static(__dirname+"/mystaticcontent"));
+
+
+app.post("/leavedetails", function(req, res, next){
+
+	var params = req.body;
+	console.log(params)
+	var mycollection = DB.collection('empleavesrecord');
+
+	mycollection.insert(params, function(err, result){
+		res.json({result:1});
+	});
+
+app.get("/getleavesdetails", function(req, res, next){
+	
+	var mycollection = DB.collection('empleavesrecord');
+
+	mycollection.find().toArray(function(err, docs){
+		console.log(docs)
+		res.json({arr:docs});
+	});
+	
+	
+});
+
+app.listen(8081);
+
+

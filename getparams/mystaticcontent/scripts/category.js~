@@ -1,0 +1,56 @@
+jQuery(document).ready(function(){
+
+
+			jQuery("#selectgender").change(function(){
+			
+				var a= jQuery("#selectgender").val();
+			
+				console.log(a);
+				if(a=='Men')
+					{
+						var viewlist = function(arr){
+
+						var str = "Category"+"<br>";
+
+							arr.forEach(function(elem){
+							str=str+ "<a href= /htmls/bootstrap1.html>"+elem.name+"</a><br>";
+							});
+						console.log(str);
+						
+						return str;
+						}
+						jQuery.get("/getcategory", function(res){
+						var a = res.arr;
+						console.log(a);
+						var category = viewlist(a);
+						jQuery("#category").html(category);
+						});
+	
+	
+					}
+				else(a=='Women')
+					{
+						var viewlist = function(arr){
+
+						var str = "Category"+"<br>";
+
+							arr.forEach(function(elem){
+							str=str+ "<a href= /htmls/bootstrap.html>"+elem.name+"</a><br>";
+							});
+						console.log(str);
+						
+						return str;
+						}
+						jQuery.get("/getcategory", function(res){
+						var a = res.arr;
+						console.log(a);
+						var category = viewlist(a);
+						jQuery("#category").html(category);
+						});
+	
+	
+					}
+	});
+
+	
+});

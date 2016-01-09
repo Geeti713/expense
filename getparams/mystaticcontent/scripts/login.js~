@@ -1,0 +1,32 @@
+jQuery(document).ready(function(){
+
+	
+	jQuery("#submitbutton").click(function(){
+
+		//match passward and id		
+		var empid = jQuery("#idinput").val();
+		var password = jQuery("#pswdinput").val();
+		
+		
+
+
+		jQuery.post("/login",{id:empid, pswd:password},function(res){
+							
+							if(res.ok==1){
+								location.href="/htmls/empdask.html"
+								}
+								else if(res.ok==0){
+									alert("Invaild empcode or password");				
+								}
+							else{
+								alert("Employe does not exist");
+							}			
+			});
+							
+						
+		
+	
+	});
+
+
+});

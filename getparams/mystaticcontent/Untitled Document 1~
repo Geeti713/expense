@@ -1,0 +1,32 @@
+app.post("/returnbook", function(req, res, next){
+
+	var params = req.body;
+	console.log("request recieved");
+	
+	var mycollection = Db.collection('issuedbook');
+
+	mycollection.update({id:params.id},{$unset:{book:params.book}}, function(err, result){
+		res.json(result);
+	});
+	
+});
+
+
+
+
+
+
+
+app.post("/returnbook", function(req, res, next){
+
+	var params = req.body;
+	console.log("request recieved");
+	
+	var mycollection = Db.collection('issuedbook');
+
+	mycollection.remove({book:params.book},{multi:0}, function(err, result){
+		res.json(result);
+	});
+	
+});
+

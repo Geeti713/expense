@@ -1,0 +1,17 @@
+jQuery(document).ready(function(){
+
+		jQuery("#addleaves").click(function(){
+
+			location.href= "htmls/leaves.html"
+		});
+
+	
+			jQuery.get("/getleavesdetails", function(res){
+			console.log(res.arr);
+			 	
+			jQuery("#leavesrecords").html(res.arr);
+
+
+			});
+
+});

@@ -1,0 +1,57 @@
+<!DOCTYPE hmtl>
+<html>
+	<head>
+		<meta name= "viewport" content= "width=device-width">
+		<link href= "../bower_components/bootstrap/dist/css/bootstrap.css" rel= "stylesheet">		
+		<link rel= "stylesheet" type= "text/css" href= "../css/bootstrap3.css">		
+	</head>
+	<body data-spy="scroll" data-target=".navbar-fixed-top">
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        	<div class="container-fluid">
+            		<div class="navbar-header">
+                		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    			<i class="fa fa-bars"></i>
+                		</button>
+                		<a style= "margin-bottom:10px" class="navbar-brand page-scroll" href="#page-top">
+                 			<span  class="light"><img style= "width: 70px; "src= ../img/happy.png></span>
+                		</a>
+            		</div>
+			<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+	                	<ul class="nav navbar-nav">                    
+                    			<li class="hidden">
+                        			<a href="#page-top"></a>
+                    			</li>
+                    			<li>
+                        			<a class="page-scroll" href="#about">About</a>
+                    			</li>
+                    			<li>
+                        			<a class="page-scroll" href="#download">Services</a>
+                    			</li>
+                    			<li>
+                        			<a class="page-scroll" href="#contact">Contact</a>
+                    			</li>
+                		</ul>
+            		</div>
+		</div>
+    	</nav>
+	<header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">hAPP!!</h1>
+                        <p class="intro-text">A free, responsive, Feedback App</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+	</header>
+
+		<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	</body>
+</html>

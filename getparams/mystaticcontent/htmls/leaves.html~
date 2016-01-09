@@ -1,0 +1,31 @@
+<!DOCTYPE hmtl>
+<html>
+	<head>
+		<meta name= "viewport" content="width=device-width">
+		<link href="/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+		<link rel= "stylesheet" type= "text/css" href= "/css/maincss.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-default" style="min-height: 60px margin-bottom: 0;">
+  			<div class="container-fluid">
+  	  		<!-- Brand and toggle get grouped for better mobile display -->
+    				<div class="navbar-header">
+      					<a class="navbar-brand" href="#"><span><img style= "width:40px" src= "../img/kavworkslogo.png">&nbsp;&nbsp;KAVworks</span></a>
+    				</div>
+		</nav>
+		<div class="container-fluid">
+			Name: &nbsp&nbsp&nbsp&nbsp<input id= "nameinput" type= "text"><br><br><br>
+			Joning: &nbsp&nbsp&nbsp&nbsp<input id= "joininginput" type= "date"><br><br><br>
+			Designatio: &nbsp&nbsp&nbsp&nbsp<input id= "designationinput" type= "text"><br><br><br>
+			Total: &nbsp&nbsp&nbsp&nbsp<input id= "total" type= "text"><br><br><br>
+			<input id= "ok" type="button" value="OK">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<input id= "cancle" type= "button" value= "CANCLE">
+
+		</div>
+		
+		<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="/scripts/leaverecord.js"></script>
+								
+	</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE.html>
+<html>
+	<head>
+		<meta name="viewport" content="width-device-width">
+		<link href="../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+		<link href= "../css/bootstrap1.css" rel= "stylesheet" type= "text/css">
+	</head>
+	<body>
+    		<div class="container-fluid">
+  <div class="jumbotron">
+    <h1>My First Bootstrap Page</h1>
+    <p>jhfgkfghfg nvfg njvfjkg</p>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Hello</h3>
+      <p>hello jgigi gmkmgik kl,dkf kmkgikgikgk gklmgg klmfg skpklg;slkkm kgmkg...</p>
+      <p>jbj jhguhgut kjgugu jgguuui juhuioioto...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3 >Geeti</h3>
+      <p>Lorem ipsum dolor sit amet, <mark>consectetur</mark> adipisicing elit...</p>
+	<ul>
+    <li>Coffee</li>
+    <li>Tea
+      <ul>
+        <li>Black tea</li>
+        <li>Green tea</li>
+      </ul>
+    </li>
+    <li>Milk</li>
+  </ul>
+      <pre >bbfbfb vbgf bfgfg gdgg fdffdfd nhhhth ffdtft fgggfygnvfngu njgybgyr nghgbnhjthbrgb ngfhgbghgbtghty ggggggggggggggggggggggggggggggggggggggggggghgjtgbyu gbbhfggrt bghghyghgytjg gfjghhtgu nguthtytnngg hgytgvhbfygr ygytbhryg bbfb bb Ut nbjb fdigjiojr kvfkjfn kfjfidoj knlnbjkg pofrimk jnuf,f.f;fj...bbfbfb vbgf bfgfg gdgg fdffdfd nhhhth ffdtft fgggfygnvfngu njgybgyr nghgbnhjthbrgb ngfhgbghgbtghty ggggggggggggggggggggggggggggggggggggggggggghgjtgbyu gbbhfggrt bghghyghgytjg gfjghhtgu nguthtytnngg hgytgvhbfygr ygytbhryg bbfb bb Ut nbjb fdigjiojr kvfkjfn kfjfidoj knlnbjkg pofrimk jnuf,f.f;fj...</pre>
+    </div>
+    <div class="col-sm-4">
+      <h3>Sthapak</h3>
+      <p >jnbkghj jgkfug jlha;;irjri kjnjggu mnjggn fg,mngjgu jgggrjnggjgnj gjnjgn jgtnntuv gngr...</p>
+	<dl>
+    <dt>Coffee</dt>
+    <dd>- black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>- white cold drink</dd>
+  </dl>    
+      <pre>mbfjfgn jguguj mlkfkri ;fijngnug vfg vjhgb hbfbyygfb hbfyuf hjbffy jbfyhyb hbyff</pre>
+    </div>
+  </div>
+		<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+								
+	</body>
+
+
+</html>
